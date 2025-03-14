@@ -6,13 +6,20 @@
    Black rgb(47, 47, 47)
    Ligher Blue rgb(87, 108, 168)
    Darker Blue rgb(39, 70, 144)*/
+body{
+    background-color: rgb(39, 70, 144);
+    color: rgb(245, 243, 245);
+    margin: auto;
+  }
+
 header{
     background-color: rgb(39, 70, 144);
     color: rgb(245, 243, 245);
+    padding: 5px 15px;
 }
 main {
     background-color: rgb(255, 99, 146);
-    color: rgb(245, 243, 245);
+    color: rgb(47, 47, 47);
     font-family: "Inter", sans-serif;
     padding: 15px;
 }
@@ -21,7 +28,6 @@ nav {
     justify-content: space-around;
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    padding: 15px;
 }
 
 nav a {
@@ -35,11 +41,11 @@ nav a {
 }
 h1 {
     font-family: "Noto Serif", serif;
-    color: rgb(245, 243, 245);
 }
 
 nav a:hover {
     background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     /* color: rgb(113, 128, 172); */
     /* color: rgb(0, 165, 224); */
     /* color: rgb(137, 161, 239); */
@@ -56,22 +62,25 @@ footer {
 
 footer a:hover {
     background-color: rgb(255, 153, 184);
-    color: rgb(245, 243, 245);
+    color: rgb(47, 47, 47);
     padding: 5px;
 }
 /* Style Code for Home */
 .home-main {
     background-color: rgb(39, 70, 144);
+    color:rgb(245, 243, 245);
 }
 
 .important-sleep {
     background-color: rgb(87, 108, 168);
+    color:rgb(245, 243, 245);
     padding: 5px 15px;
     /* margin-bottom: 0 auto; FIX THIS??? MAKE A SPACE BETWEEN THEM */
 }
 
 .purpose {
     background-color: rgb(255, 153, 184);
+    color:rgb(47, 47, 47);
     padding: 5px 15px;
 }
 
@@ -79,26 +88,30 @@ footer a:hover {
 
 .info-page {
     background-color: rgb(39, 70, 144);
+    color:rgb(245, 243, 245);
 }
 
 .sleep-cycles {
     background-color:rgb(255, 153, 184);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
 }
 
 .adequate-time {
     background-color: rgb(87, 108, 168);
+    color:rgb(245, 243, 245);
     padding: 5px 15px;
 }
 
 .sleep-disorders {
     background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: rgb(245, 243, 245);
+    background-color: rgb(255, 153, 184);
     color: rgb(47, 47, 47);
     cursor: pointer;
     padding: 18px;
@@ -109,65 +122,72 @@ footer a:hover {
     font-size: 15px;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: rgb(47, 47, 47);
+  .active, .collapsible:hover, .collapsible:hover::after {
+    background-color: rgb(87, 108, 168);
     color: rgb(245, 243, 245);
+    
   }
   
-  /* Style the collapsible content. Note: hidden by default */
   .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: rgb(245, 243, 245);
-    color: rgb(47, 47, 47);
+    background-color: rgb(39, 70, 144);
+    color: rgb(245, 243, 245);
   }
 
   .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    
-    font-size: 13px;
+    content: "+"; 
+    font-size: 30px;
     color: rgb(47, 47, 47);
     float: right;
     margin-left: 5px;
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "-";
+    font-size: 40px;
+    color: rgb(245, 243, 245);
   }
-
 
   /* Style Code for Resources */
 .resources {
     background-color: rgb(39, 70, 144);
+    color:rgb(245, 243, 245);
     padding: 5px 15px;
 }
 
 .relax {
     background-color: rgb(255, 153, 184);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
 }
 
 .track {
     background-color:rgb(87, 108, 168);
+    color:rgb(245, 243, 245);
     padding: 5px 15px;
 }
 .pcp {
-    background-color: rgb(87, 108, 168);
+  background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
 }
 
   /* Style Code for Volunteer */
 .volunteer {
     background-color:rgb(39, 70, 144);
+    color:rgb(245, 243, 245);
+    padding: 5px 15px;
 }
 .sleep-hp {
     background-color:rgb(255, 153, 184);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
 }
 .project-sleep {
     background-color:rgb(87, 108, 168);
+    color:rgb(245, 243, 245);
     padding: 5px 15px;
 }
 
@@ -175,49 +195,59 @@ footer a:hover {
   /* Style Code for Social */
 .social {
     background-color: rgb(39, 70, 144);
+    color:rgb(245, 243, 245);
 }
 
 .facebook {
     background-color:rgb(87, 108, 168);
+    color:rgb(245, 243, 245);
     padding: 5px 15px;
 }
 
 .instagram {
     background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
 }
   /* Style Code for Learn More */
 
   .learn-more {
     background-color: rgb(39, 70, 144);
+    color:rgb(245, 243, 245);
   }
 
   .CDC {
     background-color: rgb(255, 153, 184);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
   }
 
   .HP2030 {
     background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
   }
 
   .national-sleep {
     background-color: rgb(255, 153, 184);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
   }
 
   .placeholder4 {
     background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
   }
 
   .placeholder5 {
     background-color: rgb(255, 153, 184);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
   }
 
   .placeholder6 {
     background-color: rgb(255, 99, 146);
+    color: rgb(47, 47, 47);
     padding: 5px 15px;
   }
