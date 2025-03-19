@@ -23,6 +23,13 @@ main {
     font-family: "Inter", sans-serif;
     padding: 15px;
 }
+
+/* 
+Need to make these links visible 
+sub:a {
+  color: rgb(245, 243, 245);
+} */
+
 nav {
     display: flex;
     justify-content: space-around;
