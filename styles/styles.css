@@ -50,6 +50,10 @@ h1 {
     font-family: "Noto Serif", serif;
 }
 
+h3 {
+  font-family: "Noto Serif", serif;
+}
+
 nav a:hover {
     background-color: rgb(255, 99, 146);
     color: rgb(47, 47, 47);
