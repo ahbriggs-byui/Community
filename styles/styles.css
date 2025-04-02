@@ -10,6 +10,7 @@ body{
     background-color: rgb(39, 70, 144);
     color: rgb(245, 243, 245);
     margin: auto;
+    display: grid;
   }
 
 header{
@@ -22,6 +23,8 @@ main {
     color: rgb(47, 47, 47);
     font-family: "Inter", sans-serif;
     padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* 
@@ -54,12 +57,9 @@ h3 {
   font-family: "Noto Serif", serif;
 }
 
-nav a:hover {
+nav a:hover, .menu-active {
     background-color: rgb(255, 99, 146);
     color: rgb(47, 47, 47);
-    /* color: rgb(113, 128, 172); */
-    /* color: rgb(0, 165, 224); */
-    /* color: rgb(137, 161, 239); */
     padding: 25px;
     font-size: 1.5rem;
 }
@@ -79,46 +79,78 @@ footer a:hover {
 }
 /* Style Code for Home */
 .home-main {
+    display:grid;
     background-color: rgb(39, 70, 144);
     color:rgb(245, 243, 245);
+    
 }
 
 .important-sleep {
     background-color: rgb(87, 108, 168);
     color:rgb(245, 243, 245);
     padding: 5px 15px;
-    /* margin-bottom: 0 auto; FIX THIS??? MAKE A SPACE BETWEEN THEM */
+    grid-column: 1/3;
+}
+
+.bullet-points {
+    grid-column: 1/2;
+}
+
+
+.img-sub {
+    grid-column: 1/3;
 }
 
 .purpose {
     background-color: rgb(255, 153, 184);
     color:rgb(47, 47, 47);
     padding: 5px 15px;
+    grid-column: 1/3;
 }
+
+.bullet-points {
+  grid-column: 1/2;
+}
+
+.book-bed {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+/* THIS ISN'T WORKING */
 
 /* Style Code for Info page */
 
 .info-page {
     background-color: rgb(39, 70, 144);
     color:rgb(245, 243, 245);
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr;
 }
 
 .sleep-cycles {
     background-color:rgb(255, 153, 184);
     color: rgb(47, 47, 47);
     padding: 5px 15px;
+    grid-column: 1/3;
 }
 
 .adequate-time {
     background-color: rgb(87, 108, 168);
     color:rgb(245, 243, 245);
     padding: 5px 15px;
+    grid-column: 1/2;
 }
+/* 
+.nsf-sd {
+  border-color: black;
+  border-width: 15px;
+} */
 
 .sleep-disorders {
     background-color: rgb(255, 99, 146);
     color: rgb(47, 47, 47);
     padding: 5px 15px;
+    grid-column: 1/3;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -173,54 +205,171 @@ footer a:hover {
     background-color: rgb(255, 153, 184);
     color: rgb(47, 47, 47);
     padding: 5px 15px;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 0.5fr, 1fr, 0.5fr, 1fr, 0.5fr, 1fr, 0.5fr, 1fr, 0.5fr;
 }
+
+.relax h1{
+  grid-column: 1/4;
+}
+
+.yoga-image {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 5px 25px 5px 5px;
+  border: 10px solid rgb(39, 70, 144);
+}
+
+.yoga-text {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.yoga-sub {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.exercise-image {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin: 5px 25px 5px 5px;
+  border: 10px solid rgb(39, 70, 144);
+}
+
+.exercise-text {
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
+
+.exercise-sub{
+  grid-column: 1/4;
+  grid-row: 5/6
+}
+
+.meditation-image {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  margin: 5px 25px 5px 5px;
+  border: 10px solid rgb(39, 70, 144);
+}
+
+.meditation-text {
+  grid-column: 2/4;
+  grid-row: 6/7;
+}
+
+.meditation-sub {
+  grid-column: 1/4;
+  grid-row: 7/8;
+}
+
+.music-image {
+  grid-column: 1/2;
+  grid-row: 8/9;
+  margin: 5px 25px 5px 5px;
+  border: 10px solid rgb(39, 70, 144);
+}
+
+.music-text {
+  grid-column: 2/4;
+  grid-row: 8/9;
+}
+
+.music-sub {
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+
 
 .track {
     background-color:rgb(87, 108, 168);
     color:rgb(245, 243, 245);
     padding: 5px 15px;
+    grid-column: 1/3;
 }
 .pcp {
   background-color: rgb(255, 99, 146);
     color: rgb(47, 47, 47);
     padding: 5px 15px;
+    grid-column: 1/3;
+}
+
+.stethescope-image {
+  border: 10px solid rgb(255, 153, 184);
 }
 
   /* Style Code for Volunteer */
 .volunteer {
     background-color:rgb(39, 70, 144);
     color:rgb(245, 243, 245);
-    padding: 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .sleep-hp {
     background-color:rgb(255, 153, 184);
     color: rgb(47, 47, 47);
     padding: 5px 15px;
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
 .project-sleep {
     background-color:rgb(87, 108, 168);
     color:rgb(245, 243, 245);
     padding: 5px 15px;
+    grid-column: 2/3;
+    grid-row: 1/3;
 }
 
-
-  /* Style Code for Social */
-.social {
-    background-color: rgb(39, 70, 144);
-    color:rgb(245, 243, 245);
+.volunteer-button-p{
+  background-color: rgb(87, 108, 168);
+  border: none;
+  grid-row: 2/3;
 }
 
-.facebook {
-    background-color:rgb(87, 108, 168);
-    color:rgb(245, 243, 245);
-    padding: 5px 15px;
+.volunteer-button-p a {
+  border: 7.5px, solid, rgb(39, 70, 144);
+  text-align: center;
+  background-color: rgb(87, 108, 168); 
+  font-size: 30px;
+  font-family: "Noto Serif", serif;
+  color: rgb(245, 243, 245);
+  text-decoration: none;
+  padding: 15px 15px;
+  display: inline-block;
 }
 
-.instagram {
-    background-color: rgb(255, 99, 146);
-    color: rgb(47, 47, 47);
-    padding: 5px 15px;
+.volunteer-button-p a:hover {
+  background-color: rgb(255, 99, 146);
+  color: rgb(47, 47, 47);
 }
+
+.volunteer-button-s{
+  background-color: rgb(255, 153, 184);
+  border: none;
+  grid-row: 2/3;
+}
+
+.volunteer-button-s a{
+  border: 7.5px, solid, rgb(255, 99, 146);
+  text-align: center;
+  background-color: rgb(255, 153, 184);
+  font-size: 30px;
+  font-family: "Noto Serif", serif;
+  color: rgb(47, 47, 47);
+  text-decoration: none;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+.volunteer-button-s a:hover {
+  background-color: rgb(39, 70, 144);
+  color: rgb(245, 243, 245);
+}
+
   /* Style Code for Learn More */
 
   .learn-more {
